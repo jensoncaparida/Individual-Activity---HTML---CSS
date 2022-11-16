@@ -25,7 +25,7 @@ header {
   justify-content: space-between;
 }
 .logo img {
-  width: 80px;
+  width: 70px;
   margin-left: 30px;
 }
 
@@ -40,7 +40,8 @@ header {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
   margin-left: 8vw;
 }
 .nav-container ul {
@@ -52,6 +53,10 @@ header {
   transition: all 0.5s ease-in-out;
   border-radius: 5px;
 }
+.nav-container li:nth-child(1) {
+  border-bottom: 1px solid white;
+}
+
 .nav {
   display: flex;
   text-decoration: none;
@@ -129,7 +134,8 @@ header {
   transition: all 0.5s;
 }
 .btn-container a {
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
 }
 .search-nav {
   border: none;
@@ -192,12 +198,17 @@ header {
 
 .prev-btn,
 .next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 100;
-  width: 40px;
+  width: 30px;
+  height: 30px;
   padding: 10px;
   cursor: pointer;
   margin: 40px;
   color: aquamarine;
+  border-radius: 500px;
 }
 .prev-btn:active,
 .next-btn:active {
@@ -264,7 +275,6 @@ header {
 .panel-container .anime-section,
 .panel-container .upcoming-section {
   margin-left: 2vw;
-  margin-right: 10px;
   display: block;
 }
 .panel-container .latest-section .panel,
@@ -275,8 +285,8 @@ header {
 .panel-container .upcoming-section .panel {
   background-color: #393c3b;
   border-radius: 5px;
-  width: 22vw;
-  height: 33vh;
+  width: 20vw;
+  height: 30vh;
   margin-right: 15px;
   cursor: pointer;
 }
@@ -289,7 +299,7 @@ header {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 
 .latest-section .panel h4,
@@ -356,6 +366,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 3em;
+  }
+  .slider {
+    margin-top: 3em;
   }
   .nav-container {
     display: none;
@@ -363,6 +377,7 @@ header {
 
   .logo-menu {
     display: flex;
+    align-items: center;
   }
   .logo {
     z-index: 2;
@@ -370,8 +385,8 @@ header {
 
   .hamburger-lines {
     overflow: hidden;
-    height: 15px;
-    width: 21px;
+    height: 12px;
+    width: 16px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -381,7 +396,7 @@ header {
   }
   .line {
     display: block;
-    height: 3px;
+    height: 2px;
     width: 100%;
     border-radius: 20px;
     background: #ffffff;
@@ -398,13 +413,13 @@ header {
     transition: transform 0.4s ease-in-out;
   }
   .line1.transition1 {
-    transform: rotate(45deg) translate(4px, -5px);
+    transform: rotate(45deg) translate(1px, -2px);
   }
   .line2.transition2 {
     transform: translateX(-80px);
   }
   .line3.transition3 {
-    transform: rotate(-45deg) translate(3px, 5px);
+    transform: rotate(-45deg) translate(1px, 1px);
   }
 
   .btn-container {
@@ -446,18 +461,22 @@ header {
   .nav-container ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     border-top: 1px solid var(--secondary-color);
+    margin-top: -16em;
   }
   .nav-container ul li {
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
+  }
+  .nav-container ul li:nth-child(1) {
+    border-top: 2px solid gray;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   .nav-container ul li::before,
   .nav-container ul li::after {
@@ -518,6 +537,8 @@ header {
   .panel-container .upcoming-section .panel {
     width: 35vw;
     height: 30vh;
+    font-size: 14px;
+    margin-right: 10px;
   }
   .latest-section .panel img,
   .kdrama-section .panel img,
@@ -558,8 +579,10 @@ header {
   .panel-container .hollywood-section .panel,
   .panel-container .anime-section .panel,
   .panel-container .upcoming-section .panel {
-    width: 40vw;
-    height: 20vh;
+    width: 43vw;
+    height: 23vh;
+    font-size: 12px;
+    margin-right: 5px;
   }
   .latest-section .panel img,
   .kdrama-section .panel img,
@@ -568,6 +591,6 @@ header {
   .anime-section .panel img,
   .upcoming-section .panel img {
     width: 100%;
-    height: 80%;
+    height: 70%;
   }
 }
