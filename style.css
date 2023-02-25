@@ -24,8 +24,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.logo img {
-  width: 70px;
+.logo {
+  font-size: 1.5em;
+  color: teal;
+  font-weight: bold;
   margin-left: 30px;
 }
 
@@ -97,10 +99,11 @@ header {
   position: absolute;
   background-color: rgba(87, 87, 87, 0.864);
   color: white;
-  font-size: 13px;
+  font-size: 10px;
   padding: 8px;
   border-radius: 2px;
   white-space: nowrap;
+  font-weight: normal;
   visibility: hidden;
   bottom: -40px;
   transition: opacity 0.5s ease-in-out;
@@ -277,12 +280,7 @@ header {
   margin-left: 2vw;
   display: block;
 }
-.panel-container .latest-section .panel,
-.panel-container .kdrama-section .panel,
-.panel-container .cdrama-section .panel,
-.panel-container .hollywood-section .panel,
-.panel-container .anime-section .panel,
-.panel-container .upcoming-section .panel {
+.panel {
   background-color: #393c3b;
   border-radius: 5px;
   width: 20vw;
@@ -290,24 +288,25 @@ header {
   margin-right: 15px;
   cursor: pointer;
 }
-.latest-section .panel img,
-.kdrama-section .panel img,
-.cdrama-section .panel img,
-.hollywood-section .panel img,
-.anime-section .panel img,
-.upcoming-section .panel img {
+.panel img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
   height: 70%;
 }
 
-.latest-section .panel h4,
-.kdrama-section .panel h4,
-.cdrama-section .panel h4,
-.hollywood-section .panel h4,
-.anime-section .panel h4,
-.upcoming-section .panel h4 {
+.panel h5 {
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+  display: flex;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.292);
+  border-radius: 15%;
+  text-align: center;
+}
+
+.panel h4 {
   margin-left: 10px;
 }
 
@@ -529,25 +528,20 @@ header {
     margin-bottom: 10px;
   }
 
-  .panel-container .latest-section .panel,
-  .panel-container .kdrama-section .panel,
-  .panel-container .cdrama-section .panel,
-  .panel-container .hollywood-section .panel,
-  .panel-container .anime-section .panel,
-  .panel-container .upcoming-section .panel {
+  .panel {
     width: 35vw;
     height: 30vh;
     font-size: 14px;
     margin-right: 10px;
   }
-  .latest-section .panel img,
-  .kdrama-section .panel img,
-  .cdrama-section .panel img,
-  .hollywood-section .panel img,
-  .anime-section .panel img,
-  .upcoming-section .panel img {
+  .panel img {
     width: 100%;
     height: 80%;
+  }
+  .panel h5 {
+    position: absolute;
+    bottom: 45px;
+    right: 10px;
   }
 }
 
@@ -573,24 +567,19 @@ header {
     margin-bottom: 5px;
   }
 
-  .panel-container .latest-section .panel,
-  .panel-container .kdrama-section .panel,
-  .panel-container .cdrama-section .panel,
-  .panel-container .hollywood-section .panel,
-  .panel-container .anime-section .panel,
-  .panel-container .upcoming-section .panel {
+  .panel {
     width: 43vw;
     height: 23vh;
     font-size: 12px;
     margin-right: 5px;
   }
-  .latest-section .panel img,
-  .kdrama-section .panel img,
-  .cdrama-section .panel img,
-  .hollywood-section .panel img,
-  .anime-section .panel img,
-  .upcoming-section .panel img {
+  .panel img {
     width: 100%;
     height: 70%;
+  }
+  .panel h5 {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
   }
 }

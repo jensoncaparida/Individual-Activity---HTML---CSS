@@ -35,6 +35,7 @@ prevButton.addEventListener("click", () => {
   slideNumber--;
 
   if (slideNumber < 0) {
+    s;
     slideNumber = numberofSlides - 1;
   }
 
